@@ -1,19 +1,63 @@
-<!DOCTYPE HTML>
-<html>
- <head>
-  <title>第三次就上手</title>
-  <link rel="icon" href="wdw.jpg" />
-  </head>
-<body>
-<img src="wdw.jpg" width="399" height="299">
-  <p>Before the script...</p>
+<style>
+#result1 {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px
+   }
+ #result2{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px
+   }
+   button{
+   	width: ;:250px;
+   	height:253px;
+   	font-size:30px;
+   }
+ ##cancel {
+ 	background-color: red;
+ 	color: white;
+</style>
+<div id='result1'>
+</div>
+<div id='result2'>
+</div>
 
-  <script>
-    //alert( 'Hello, world!' );
-  </script>
+<div>
 
-  <p>...After the script.</p>
+	
+    <label for="x">無敵是多麼寂寞</label>
+	<input type="number" name="x" id="x">
+	<br>
+	<label for="y">暫未成功人士</label>
+	<input type="number" name="y" id="y">
+	<br>
+	<button id="btn" onclick="show()">顯示投票結果</button>
+	<button id="cancel" onclick="cancel()">回復原始狀態</button>
+</div>
+<script>
+let message="hello"
 
-</body>
+let x ="無敵是多麼寂寞<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0aX0BHWy-VfcIcj6IPal45cUOoAgyLI4FqA&usqp=CAU 'width='150' height='150'>";
+let y ="暫未成功人士<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHJYjfdkAAwHGaInGCUjBlBeSZJs1Xh0qWrA&usqp=CAU' width='150' height='150'>";
+document.querySelector("#result1").innerHTML = x;
+document.querySelector("#result2").innerHTML = y;
 
-</html>
+function show(){
+      let result_x= document.querySelector("#x").value;
+      let result_y= document.querySelector("#y").value;
+      document.querySelector("#result1").style.width=result_x+"px";
+      document.querySelector("#result2").style.width=result_y+"px";
+}
+function cancel(){
+	document.querySelector("#result1").style.width = "200px";
+	document.querySelector("#result2").style.width = "200px";
+}
+	
+</script>

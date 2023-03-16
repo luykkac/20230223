@@ -1,63 +1,58 @@
-<style>
-#result1 {
-    background-color: red;
-    width: 200px;
-    height: 200px;
+<!DOCTYPE html>
+<html>
+<head>
+
+  <style>
+  body {
+    background-color: rgba(255, 255, 255, 1);
+  }
+  
+ 
+  h1 {
     color: white;
-    font-weight: bold;
-    font-size: 20px
+    text-align: center;
+  }
+
+  p {
+    font-family: verdana;
+    font-size: 20px;
+    font-family:Arial Black;
+  }
+    div img {
+    width: auto;
+    height: 100px;
    }
- #result2{
-    background-color: blue;
-    width: 200px;
-    height: 200px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px
+ 
+
+   .bts{
+    background-color: #cf8fe3;
+    color:#8fbce3;
+    font-size:50px;
+    font-family:Broadway;
+
    }
-   button{
-   	width: ;:250px;
-   	height:253px;
-   	font-size:30px;
+   .whydontwe{
+    background-color:#cee38f;
+     color:#78adc4;
+    font-size:50px;
+    font-family:Algerian;
+    ;
    }
- ##cancel {
- 	background-color: rgba(0,255,0,0.5);
- 	color: white;
-</style>
-<div id='result1'>
-</div>
-<div id='result2'>
-</div>
+  </style>
+</head>
+<body>
 
-<div>
+<div class="bts">Jin<iframe width="894" height="679" src="https://www.youtube.com/embed/XLQDVFgpKLI" title="[n월의 석진] Message from Jin : Mar 2023 💌" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Jin_for_BTS_5th_anniversary_party_in_LA_photoshoot_by_Dispatch%2C_May_2018_08.jpg/330px-Jin_for_BTS_5th_anniversary_party_in_LA_photoshoot_by_Dispatch%2C_May_2018_08.jpg" width="100" height="auto"></div>
 
-	
-    <label for="x">無敵是多麼寂寞</label>
-	<input type="number" name="x" id="x">
-	<br>
-	<label for="y">暫未成功人士</label>
-	<input type="number" name="y" id="y">
-	<br>
-	<button id="btn" onclick="show()">顯示投票結果</button>
-	<button id="cancel" onclick="cancel()">回復原始狀態</button>
-</div>
-<script>
-let message="hello"
+<video width="200" controls>
+  <source src="ado.mp4" type="video/mp4">
+  Your browser does not support HTML video.
+</video>
 
-let x ="無敵是多麼寂寞<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0aX0BHWy-VfcIcj6IPal45cUOoAgyLI4FqA&usqp=CAU 'width='150' height='150'>";
-let y ="暫未成功人士<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHJYjfdkAAwHGaInGCUjBlBeSZJs1Xh0qWrA&usqp=CAU' width='150' height='150'>";
-document.querySelector("#result1").innerHTML = x;
-document.querySelector("#result2").innerHTML = y;
+<div class="bts">SUGA <iframe width="894" height="503" src="https://www.youtube.com/embed/XZOqWmRYk1M" title="Me, Myself, and SUGA ‘Wholly or Whole me’ ​Photoshoot Sketch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Suga_for_Dispatch_White_Day_Special%2C_27_February_2019_04.jpg/330px-Suga_for_Dispatch_White_Day_Special%2C_27_February_2019_04.jpg" width="100" height="100"></div>
+<div class="whydontwe">Corbyn<iframe width="431" height="767" src="https://www.youtube.com/embed/108WDyuNX4s" title="corbyn besson - so sick (cover)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><img src="https://img.wattpad.com/6faa20cc284ca139b952ac4b6f94e57ec823141c/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f7a514f55454e4257695a307369773d3d2d3733363330303435322e313561316230336234323434303666393436343234333030323939322e6a7067?s=fit&w=720&h=720" width="100" height="100"></div>
+<div class="whydontwe">jack<iframe width="431" height="767" src="https://www.youtube.com/embed/M6MB5W6ItII" title="JACK AVERY July cover" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScwTKn_gtof-d4AHvN7UQt5VENTMA8D3Aujw&usqp=CAU" width="123" height=""></div>
 
-function show(){
-      let result_x= document.querySelector("#x").value;
-      let result_y= document.querySelector("#y").value;
-      document.querySelector("#result1").style.width=result_x+"px";
-      document.querySelector("#result2").style.width=result_y+"px";
-}
-function cancel(){
-	document.querySelector("#result1").style.width = "200px";
-	document.querySelector("#result2").style.width = "200px";
-}
-	
-</script>
+</html>
+
+

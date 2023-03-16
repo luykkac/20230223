@@ -1,65 +1,75 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    	<title>哇哈哈</title>
+<head>
 
-    </head>
-    <body>
-    	 <h1>BMI計算器</h1>
-      <table border="2">
-      	<tr>
-      		<th>身高</th>
-      	    <th>體重</th>
-      	</tr>
-      	<tr>
-      		<td><input type="number" id="height" name="height"placeholder="公尺" ></td> 
-      		<td><input type="number" id="weight" name="weight"placeholder="公斤" ></td>
-      	</tr>
-      	<tr>
-      		<td></td>
-      		<td><button id="calculator" onclick="calculate()">計算</button></td>
-      	</tr>
-      </table>
-        <script type="text/javascript">
-        function calculate() {
-             let height = document.querySelector("#height").value;// 取得身高
-             let weight = document.querySelector("#weight").value;// 取得體重
-             alert("身高"+height);
-             alert("體重"+weight);
-             let bmi = weight / (height * height); // 計算BMI
-             alert("bmi"+bmi);
-             if (bmi<18.5){
-             	alert("體重過輕")
-             }else if(bmi>=18.5&&bmi<24){
-             alert("健康體位")
-         }else{
-         	alert("體位異常")
-         }
-    }
-     </script>
-     
-     
+  <style>
+  body {
+    background-color: rgba(255, 255, 255, 1);
+  }
+  
+ 
+  h1 {
+    color: white;
+    text-align: center;
+  }
 
-      <h1>哈哈哈</h1>
-      <table border="2">
-      	<tr>
-      		<th>書名</th>
-      	    <th>作者</th>
-      	</tr>
-      	<tr>
-      		<td>練巨人</td> 
-      		<td>謄本數</td>
-      	</tr>
-      	<tr>
-      		<td>七龍珠</td>
-      		<td>鳥山明</td>
-      	</tr>
-      </table>
+  p {
+    font-family: verdana;
+    font-size: 20px;
+    font-family:Arial Black;
+  }
+    div img {
+   	width: auto;
+    height: 100px;
+   }
+ 
 
-      <h2>HTML Table</h2>
-      <h3> H3 </h3>
-      <h4> H4 </h4>
-      <h5> H5 </h5>
-      <h6> H6 </h6>
-    </body>
+   .bts{
+   	background-color: #cf8fe3;
+    color:#8fbce3;
+    font-size:50px;
+    font-family:Broadway;
+
+   }
+   .whydontwe{
+   	background-color:#cee38f;
+     color:#78adc4;
+    font-size:50px;
+    font-family:Algerian;
+    ;
+   }
+  </style>
+</head>
+<body>
+
+<div class="bts">Jin<iframe width="894" height="679" src="https://www.youtube.com/embed/XLQDVFgpKLI" title="[n월의 석진] Message from Jin : Mar 2023 💌" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><img id=jin-image src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Jin_for_BTS_5th_anniversary_party_in_LA_photoshoot_by_Dispatch%2C_May_2018_08.jpg/330px-Jin_for_BTS_5th_anniversary_party_in_LA_photoshoot_by_Dispatch%2C_May_2018_08.jpg" width="100" height="auto"></div>
+
+<video width="200" controls>
+  <source src="ado.mp4" type="video/mp4">
+  Your browser does not support HTML video.
+</video>
+
+<div class="bts">SUGA <iframe width="894" height="503" src="https://www.youtube.com/embed/XZOqWmRYk1M" title="Me, Myself, and SUGA ‘Wholly or Whole me’ ​Photoshoot Sketch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Suga_for_Dispatch_White_Day_Special%2C_27_February_2019_04.jpg/330px-Suga_for_Dispatch_White_Day_Special%2C_27_February_2019_04.jpg" width="100" height="100"></div>
+<div class="whydontwe">Corbyn<iframe width="431" height="767" src="https://www.youtube.com/embed/108WDyuNX4s" title="corbyn besson - so sick (cover)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><img src="https://img.wattpad.com/6faa20cc284ca139b952ac4b6f94e57ec823141c/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f7a514f55454e4257695a307369773d3d2d3733363330303435322e313561316230336234323434303666393436343234333030323939322e6a7067?s=fit&w=720&h=720" width="100" height="100"></div>
+<div class="whydontwe">jack<iframe width="431" height="767" src="https://www.youtube.com/embed/M6MB5W6ItII" title="JACK AVERY July cover" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScwTKn_gtof-d4AHvN7UQt5VENTMA8D3Aujw&usqp=CAU" width="123" height=""></div>
+
+<p>
+<script>
+  let jins = ['https://s.yimg.com/os/creatr-uploaded-images/2022-12/bf7aade0-7ab9-11ed-9d7c-2ac7b914d858', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaZNiFJKOSmS-JG-Lt9p_8L3C7NCdY9cX0LnX5f5LGC0yDz3wwIcNUgHfB0qt5t2E0XjU&usqp=CAU'];
+
+let count=0;
+setInterval(
+ function(){
+ document.querySelector("#jin-image").src=jins
+   [count%2];
+   count=count+1;
+   },
+   3000
+   );
+  
+</script>
+</body>
+
 </html>
+
+

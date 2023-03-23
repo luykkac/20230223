@@ -1,75 +1,86 @@
-<!DOCTYPE html>
 <html>
 <head>
-
-  <style>
-  body {
-    background-color: rgba(255, 255, 255, 1);
-  }
-  
- 
-  h1 {
-    color: white;
-    text-align: center;
-  }
-
-  p {
-    font-family: verdana;
-    font-size: 20px;
-    font-family:Arial Black;
-  }
-    div img {
-   	width: auto;
-    height: 100px;
-   }
- 
-
-   .bts{
-   	background-color: #cf8fe3;
-    color:#8fbce3;
-    font-size:50px;
-    font-family:Broadway;
-
-   }
-   .whydontwe{
-   	background-color:#cee38f;
-     color:#78adc4;
-    font-size:50px;
-    font-family:Algerian;
-    ;
-   }
-  </style>
+	<title>顯示與隱藏</title>
+	<style>
+         .america img{
+			width: 100px;
+			height: 100px;
+		}
+   		.china img {
+			width: 70px;
+			height: 70px;
+		}
+		.taiwan img {
+			width: 150px;
+			height: 150px;
+		}
+		
+		.america, .china, .taiwan {
+			display: none;
+		}
+		.
+	</style>
 </head>
+
 <body>
 
-<div class="bts">Jin<iframe width="894" height="679" src="https://www.youtube.com/embed/XLQDVFgpKLI" title="[n월의 석진] Message from Jin : Mar 2023 💌" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><img id=jin-image src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Jin_for_BTS_5th_anniversary_party_in_LA_photoshoot_by_Dispatch%2C_May_2018_08.jpg/330px-Jin_for_BTS_5th_anniversary_party_in_LA_photoshoot_by_Dispatch%2C_May_2018_08.jpg" width="100" height="auto"></div>
+	<button onclick="hide();">隱藏文字</button>
+	<button onclick="show();">顯示文字</button>
+	<button onclick="hidewhydontwe();">隱藏whydontwe=</button>
+	<button onclick="showwhydontwe();">顯示whydontwe</button>
 
-<video width="200" controls>
-  <source src="ado.mp4" type="video/mp4">
-  Your browser does not support HTML video.
-</video>
+	<div class="news_title">
+		第六週上課
+		<br />
+		要準備期中報告了
+	</div>
+	<div class="bands">
+	<div class="whydontwe america ">
+		<img src="https://i.pinimg.com/236x/66/c0/cd/66c0cd4e3678b2d42c2574fbea8edf7b.jpg" width="300" height="auto">
+	</div>
 
-<div class="bts">SUGA <iframe width="894" height="503" src="https://www.youtube.com/embed/XZOqWmRYk1M" title="Me, Myself, and SUGA ‘Wholly or Whole me’ ​Photoshoot Sketch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Suga_for_Dispatch_White_Day_Special%2C_27_February_2019_04.jpg/330px-Suga_for_Dispatch_White_Day_Special%2C_27_February_2019_04.jpg" width="100" height="100"></div>
-<div class="whydontwe">Corbyn<iframe width="431" height="767" src="https://www.youtube.com/embed/108WDyuNX4s" title="corbyn besson - so sick (cover)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><img src="https://img.wattpad.com/6faa20cc284ca139b952ac4b6f94e57ec823141c/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f7a514f55454e4257695a307369773d3d2d3733363330303435322e313561316230336234323434303666393436343234333030323939322e6a7067?s=fit&w=720&h=720" width="100" height="100"></div>
-<div class="whydontwe">jack<iframe width="431" height="767" src="https://www.youtube.com/embed/M6MB5W6ItII" title="JACK AVERY July cover" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScwTKn_gtof-d4AHvN7UQt5VENTMA8D3Aujw&usqp=CAU" width="123" height=""></div>
+	<button class="whydontwe america">
+		<img src="https://i.pinimg.com/736x/6b/01/46/6b0146cf192bb05bd788d2f892a2efa6.jpg" width="auto" height="300">
+	</button>
+	<div class="bands">
+      <div class="Air League Band china">
+      	<img src="http://images.51vv.com/upload/sod/artist/19/03/qiyunlianmeng500.jpg" width="100" height="100">
+      </div>
 
-<p>
-<script>
-  let jins = ['https://s.yimg.com/os/creatr-uploaded-images/2022-12/bf7aade0-7ab9-11ed-9d7c-2ac7b914d858', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaZNiFJKOSmS-JG-Lt9p_8L3C7NCdY9cX0LnX5f5LGC0yDz3wwIcNUgHfB0qt5t2E0XjU&usqp=CAU'];
+      <div class="nine percent china">
+      	<img src="https://i2.wp.com/www.unecne.com/wp-content/uploads/2018/04/Nine-Percent-at-WWoHP-USH-4-13-18.jpg?fit=2280%2C1824&ssl=1" width="100" height="100">
+      </div>
+ <div class="bands">
+ <div class="4inlove taiwan">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0cTsfZKSYD-YNfLy76vszoxyPLCnC7WQTCg&usqp=CAU">
+	</div>
 
-let count=0;
-setInterval(
- function(){
- document.querySelector("#jin-image").src=jins
-   [count%2];
-   count=count+1;
-   },
-   3000
-   );
-  
-</script>
+	<script type="text/javascript">
+		function hide() {
+			document.querySelector(".news_title").style.display="none";
+		}
+
+		function show() {
+			document.querySelector(".news_title").style.display="block";
+		}
+
+		function hidewhydontwe() {
+			let elements = document.querySelectorAll(".whydontwe");
+			for(let i = 0; i < elements.length; i=i+1) {
+				elements[i].style.display = "none";
+			}
+		}
+
+		function showwhydontwe() {
+			let elements = document.querySelectorAll(".whydontwe");
+			for(let i = 0; i < elements.length; i=i+1) {
+				elements[i].style.display = "block";
+			}
+		}
+
+
+	</script>
 </body>
 
 </html>
-
 

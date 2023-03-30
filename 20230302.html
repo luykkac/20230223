@@ -1,86 +1,379 @@
 <html>
 <head>
-	<title>顯示與隱藏</title>
-	<style>
-         .america img{
-			width: 100px;
-			height: 100px;
-		}
-   		.china img {
-			width: 70px;
-			height: 70px;
-		}
-		.taiwan img {
-			width: 150px;
-			height: 150px;
-		}
-		
-		.america, .china, .taiwan {
-			display: none;
-		}
-		.
-	</style>
+  <title>顯示與隱藏</title>
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+
+  <style>
+    .america img{
+      width: auto;
+      height: 100px;
+    }
+
+    .china img {
+      width: auto;
+      height: 100px;
+    }
+
+    .taiwan img {
+      width: auto;
+      height: 100px;
+    }
+
+    .america, .japan, .taiwan {
+      display: none;
+    }
+
+
+    .backgroundImage {
+      width: 100vw;
+      height: 100vh;
+      background-size: cover;
+      background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSoUZZKYQnLUoQrzgEPnnyu2qINdgQi6BSpA&usqp=CAU);
+      position:fixed;
+      top:0px;
+      left:0px;
+      z-index:-1;
+    }
+    .backgroundImage video{
+      width: 140vw;
+      height: 150vh;
+      position:fixed;
+      top:0px;
+      left:-200px;
+
+    }
+    body {
+      color: white;
+      font-size: 50px;
+    }
+
+    .news_title {
+      background-color: rgba(0, 0, 0, 0.5);
+      font-family: "Audiowide", 新細明體, serif;
+    }
+  </style>
+
 </head>
 
 <body>
 
-	<button onclick="hide();">隱藏文字</button>
-	<button onclick="show();">顯示文字</button>
-	<button onclick="hidewhydontwe();">隱藏whydontwe=</button>
-	<button onclick="showwhydontwe();">顯示whydontwe</button>
+  <div class="backgroundImage">
+    <video id="backgroundVideo">
+      <source src="whydontwe.mp4" type="video/mp4">
+    </video>
+  </div>
+  
 
-	<div class="news_title">
-		第六週上課
-		<br />
-		要準備期中報告了
-	</div>
-	<div class="bands">
-	<div class="whydontwe america ">
-		<img src="https://i.pinimg.com/236x/66/c0/cd/66c0cd4e3678b2d42c2574fbea8edf7b.jpg" width="300" height="auto">
-	</div>
+  <button onclick="hide();">隱藏文字</button>
+  <button onclick="show();">顯示文字</button>
 
-	<button class="whydontwe america">
-		<img src="https://i.pinimg.com/736x/6b/01/46/6b0146cf192bb05bd788d2f892a2efa6.jpg" width="auto" height="300">
-	</button>
-	<div class="bands">
-      <div class="Air League Band china">
-      	<img src="http://images.51vv.com/upload/sod/artist/19/03/qiyunlianmeng500.jpg" width="100" height="100">
+  <div class="news_title">
+    <h1>whydontwe</h1>
+    <p>Why Don't We，縮寫為WDW，是一個美國男孩樂隊，由 Jonah Marais、Corbyn Besson、Daniel Seavey、Jack Avery 和 Zach Herron 組成。他們成立於 2016 年，發行了兩張錄音室專輯。
+      <button onclick="hidewhydontwe();">隱藏whydontwe</button>
+      <button onclick="showwhydontwe();">顯示whydontwe</button>
+      <div class="bands">
+        <div class="whydontwe america">
+          <img src="https://i.pinimg.com/236x/66/c0/cd/66c0cd4e3678b2d42c2574fbea8edf7b.jpg" width="200" height="200">
+        </div>
+
+        <button class="whydontwe america">
+          <img src="https://i.pinimg.com/736x/6b/01/46/6b0146cf192bb05bd788d2f892a2efa6.jpg" width="100" height="100">
+        </button>
       </div>
+    </p>
+  </div>
 
-      <div class="nine percent china">
-      	<img src="https://i2.wp.com/www.unecne.com/wp-content/uploads/2018/04/Nine-Percent-at-WWoHP-USH-4-13-18.jpg?fit=2280%2C1824&ssl=1" width="100" height="100">
+  <div class="news_title">
+    <h1>nine percent</h1>
+    <p>是依據愛奇藝首檔偶像男團競演養成類真人秀《偶像練習生》的出道承諾[5]，於2018年交由大眾票選出的九人男子唱跳音樂團體[6]，成員包括蔡徐坤、陳立農、范丞丞、Justin黃明昊、林彥俊、朱正廷、王子異、小鬼王琳凱、尤長靖。該團於2018年4月6日在節目中正式出道[7]，2019年10月6日合約期滿，進行為期一年半的限定活動。
+      <button onclick="hideninepercent();">隱藏ninepercent</button>
+      <button onclick="showninepercent();">顯示ninepercent</button>
+      <div class="bands">
+
+        <div class="ninepercent china">
+          <img src="https://i2.wp.com/www.unecne.com/wp-content/uploads/2018/04/Nine-Percent-at-WWoHP-USH-4-13-18.jpg?fit=2280%2C1824&ssl=1" width="100" height="100">
+        </div>
+      </p>
+    </div>
+  </div>
+
+  <div class="news_title">
+    <h1>4inlove</h1>
+    <p>4 in Love是台灣的四人女子團體，於2000年成軍，成員包括冷嘉琳、黃小柔、楊丞琳和張棋惠，共發行過兩張專輯，於2002年宣布解散。
+      <button onclick="hide4inlove();">隱藏4inlove</button>
+      <button onclick="show4inlove();">顯示4inlove</button>
+      <div class="bands">
+
+
+        <div class="4inlove taiwan">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0cTsfZKSYD-YNfLy76vszoxyPLCnC7WQTCg&usqp=CAU">
+        </div>
       </div>
- <div class="bands">
- <div class="4inlove taiwan">
-		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0cTsfZKSYD-YNfLy76vszoxyPLCnC7WQTCg&usqp=CAU">
-	</div>
-
-	<script type="text/javascript">
-		function hide() {
-			document.querySelector(".news_title").style.display="none";
-		}
-
-		function show() {
-			document.querySelector(".news_title").style.display="block";
-		}
-
-		function hidewhydontwe() {
-			let elements = document.querySelectorAll(".whydontwe");
-			for(let i = 0; i < elements.length; i=i+1) {
-				elements[i].style.display = "none";
-			}
-		}
-
-		function showwhydontwe() {
-			let elements = document.querySelectorAll(".whydontwe");
-			for(let i = 0; i < elements.length; i=i+1) {
-				elements[i].style.display = "block";
-			}
-		}
+    </p>
+  </div>
 
 
-	</script>
+  <div class="news_title">
+    <h1>4inlove</h1>
+    <p>4 in Love是台灣的四人女子團體，於2000年成軍，成員包括冷嘉琳、黃小柔、楊丞琳和張棋惠，共發行過兩張專輯，於2002年宣布解散。
+      <button onclick="hide4inlove();">隱藏4inlove</button>
+      <button onclick="show4inlove();">顯示4inlove</button>
+      <div class="bands">
+
+
+        <div class="4inlove taiwan">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0cTsfZKSYD-YNfLy76vszoxyPLCnC7WQTCg&usqp=CAU">
+        </div>
+      </div>
+    </p>
+  </div>
+
+
+  <div class="news_title">
+    <h1>4inlove</h1>
+    <p>4 in Love是台灣的四人女子團體，於2000年成軍，成員包括冷嘉琳、黃小柔、楊丞琳和張棋惠，共發行過兩張專輯，於2002年宣布解散。
+      <button onclick="hide4inlove();">隱藏4inlove</button>
+      <button onclick="show4inlove();">顯示4inlove</button>
+      <div class="bands">
+
+
+        <div class="4inlove taiwan">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0cTsfZKSYD-YNfLy76vszoxyPLCnC7WQTCg&usqp=CAU">
+        </div>
+      </div>
+    </p>
+  </div>
+
+
+
+   <div class="news_title">
+    <h1>4inlove</h1>
+    <p>4 in Love是台灣的四人女子團體，於2000年成軍，成員包括冷嘉琳、黃小柔、楊丞琳和張棋惠，共發行過兩張專輯，於2002年宣布解散。
+      <button onclick="hide4inlove();">隱藏4inlove</button>
+      <button onclick="show4inlove();">顯示4inlove</button>
+      <div class="bands">
+
+
+        <div class="4inlove taiwan">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0cTsfZKSYD-YNfLy76vszoxyPLCnC7WQTCg&usqp=CAU">
+        </div>
+      </div>
+    </p>
+  </div>
+
+
+
+  
+ <div class="news_title">
+    <h1>4inlove</h1>
+    <p>4 in Love是台灣的四人女子團體，於2000年成軍，成員包括冷嘉琳、黃小柔、楊丞琳和張棋惠，共發行過兩張專輯，於2002年宣布解散。
+      <button onclick="hide4inlove();">隱藏4inlove</button>
+      <button onclick="show4inlove();">顯示4inlove</button>
+      <div class="bands">
+
+
+        <div class="4inlove taiwan">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0cTsfZKSYD-YNfLy76vszoxyPLCnC7WQTCg&usqp=CAU">
+        </div>
+      </div>
+    </p>
+  </div>
+
+
+ <div class="news_title">
+    <h1>4inlove</h1>
+    <p>4 in Love是台灣的四人女子團體，於2000年成軍，成員包括冷嘉琳、黃小柔、楊丞琳和張棋惠，共發行過兩張專輯，於2002年宣布解散。
+      <button onclick="hide4inlove();">隱藏4inlove</button>
+      <button onclick="show4inlove();">顯示4inlove</button>
+      <div class="bands">
+
+
+        <div class="4inlove taiwan">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0cTsfZKSYD-YNfLy76vszoxyPLCnC7WQTCg&usqp=CAU">
+        </div>
+      </div>
+    </p>
+  </div>
+
+
+
+
+   <div class="news_title">
+    <h1>4inlove</h1>
+    <p>5566是一個由5名成員組成的台灣男子團體，於2002年1月21日出道。5566名稱原意為「5位團員，6大領域」期許團內五位成員於演藝界的六大領域（唱片、主持、戲劇、電影、廣告、舞台）皆有收穫與發展，現任團員為孫協志、王仁甫、許孟哲。1
+      <button onclick="hide4inlove();">隱藏4inlove</button>
+      <button onclick="show4inlove();">顯示4inlove</button>
+      <div class="bands">
+
+
+        <div class="4inlove taiwan">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0cTsfZKSYD-YNfLy76vszoxyPLCnC7WQTCg&usqp=CAU">
+        </div>
+      </div>
+    </p>
+  </div>
+
+
+  <div class="news_title">
+    <h1>4inlove</h1>
+    <p>5566是一個由5名成員組成的台灣男子團體，於2002年1月21日出道。5566名稱原意為「5位團員，6大領域」期許團內五位成員於演藝界的六大領域（唱片、主持、戲劇、電影、廣告、舞台）皆有收穫與發展，現任團員為孫協志、王仁甫、許孟哲。1
+      <button onclick="hide4inlove();">隱藏4inlove</button>
+      <button onclick="show4inlove();">顯示4inlove</button>
+      <div class="bands">
+
+
+        <div class="4inlove taiwan">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0cTsfZKSYD-YNfLy76vszoxyPLCnC7WQTCg&usqp=CAU">
+        </div>
+      </div>
+    </p>
+  </div>
+
+  <div class="news_title">
+    <h1>4inlove</h1>
+    <p>5566是一個由5名成員組成的台灣男子團體，於2002年1月21日出道。5566名稱原意為「5位團員，6大領域」期許團內五位成員於演藝界的六大領域（唱片、主持、戲劇、電影、廣告、舞台）皆有收穫與發展，現任團員為孫協志、王仁甫、許孟哲。1
+      <button onclick="hide4inlove();">隱藏4inlove</button>
+      <button onclick="show4inlove();">顯示4inlove</button>
+      <div class="bands">
+
+
+        <div class="4inlove taiwan">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0cTsfZKSYD-YNfLy76vszoxyPLCnC7WQTCg&usqp=CAU">
+        </div>
+      </div>
+    </p>
+  </div>
+
+
+  <div class="news_title">
+    <h1>4inlove</h1>
+    <p>5566是一個由5名成員組成的台灣男子團體，於2002年1月21日出道。5566名稱原意為「5位團員，6大領域」期許團內五位成員於演藝界的六大領域（唱片、主持、戲劇、電影、廣告、舞台）皆有收穫與發展，現任團員為孫協志、王仁甫、許孟哲。1
+      <button onclick="hide4inlove();">隱藏4inlove</button>
+      <button onclick="show4inlove();">顯示4inlove</button>
+      <div class="bands">
+
+
+        <div class="4inlove taiwan">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0cTsfZKSYD-YNfLy76vszoxyPLCnC7WQTCg&usqp=CAU">
+        </div>
+      </div>
+    </p>
+  </div>
+
+
+  <div class="news_title">
+    <h1>4inlove</h1>
+    <p>5566是一個由5名成員組成的台灣男子團體，於2002年1月21日出道。5566名稱原意為「5位團員，6大領域」期許團內五位成員於演藝界的六大領域（唱片、主持、戲劇、電影、廣告、舞台）皆有收穫與發展，現任團員為孫協志、王仁甫、許孟哲。1
+      <button onclick="hide4inlove();">隱藏4inlove</button>
+      <button onclick="show4inlove();">顯示4inlove</button>
+      <div class="bands">
+
+
+        <div class="4inlove taiwan">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0cTsfZKSYD-YNfLy76vszoxyPLCnC7WQTCg&usqp=CAU">
+        </div>
+      </div>
+    </p>
+  </div>
+
+
+
+
+
+
+<div class="bands">
+  <div class=" Air League Band china">
+    <img src="https://i.pinimg.com/236x/66/c0/cd/66c0cd4e3678b2d42c2574fbea8edf7b.jpg">
+  </div>
+
+  <div class="Air League Band china">
+    <img src="https://i.pinimg.com/236x/66/c0/cd/66c0cd4e3678b2d42c2574fbea8edf7b.jpg">
+  </div>
+</div>
+
+<div class="bands">
+
+
+
+  <div class="nineoneone taiwan">
+    <img src="https://attach.setn.com/newsimages/2017/01/05/768598-PH.jpg">
+  </div>
+</div>
+<script type="text/javascript">
+  function hide() {
+    document.querySelector(".news_title").style.display="none";
+  }
+
+  function show() {
+    document.querySelector(".news_title").style.display="inline-block";
+  }
+
+  function hidewhydontwe() {
+
+    let elements = document.querySelectorAll(".whydontwe");
+    for(let i = 0; i < elements.length; i=i+1) {
+      elements[i].style.display = "none";
+    }
+  }
+
+  function showwhydontwe() {
+    let elements = document.querySelectorAll(".whydontwe");
+    for(let i = 0; i < elements.length; i=i+1) {
+      elements[i].style.display = "inline-block";
+    }
+    document.querySelector("body").style.backgroundImage="url(https://upload.wikimedia.org/wikipedia/commons/c/cc/NewJeans_theMEGASTUDY.jpg)";
+    document.querySelector("#backgroundVideo").src="whydontwe.mp4";
+  }
+
+  function hideninepercent() {
+
+    let elements = document.querySelectorAll(".nine percent");
+    for(let i = 0; i < elements.length; i=i+1) {
+      elements[i].style.display = "none";
+    }
+  }
+
+  function showninepercent() {
+    let elements = document.querySelectorAll(".nine percent");
+    for(let i = 0; i < elements.length; i=i+1) {
+      elements[i].style.display = "inline-block";
+    }
+    document.querySelector("body").style.backgroundImage="url(https://images.chinatimes.com/newsphoto/2021-11-14/656/20211114000957.jpg)";
+
+    document.querySelector("#backgroundVideo").src="ninepercent.mp4";
+  }
+
+document.querySelector("#backgroundVideo").src="ninepercent.mp4";
+
+    function hide4inlove() {
+
+    let elements = document.querySelectorAll(".4inlove");
+    for(let i = 0; i < elements.length; i=i+1) {
+      elements[i].style.display = "none";
+    }
+  }
+
+  function show4inlove() {
+    let elements = document.querySelectorAll(".4inlove");
+    for(let i = 0; i < elements.length; i=i+1) {
+      elements[i].style.display = "inline-block";
+    }
+    document.querySelector("body").style.backgroundImage="url(https://www.mirrormedia.com.tw/assets/images/20181107153913-9c74bae632e22a175a74af373dbc9b62-mobile.jpg)";
+  }
+
+  window.addEventListener("click",function(){
+    let video=document.querySelector("#backgroundVideo");
+    if (video.paused) {
+      video.play();
+    }else{
+      video.pause();
+
+    }
+  });
+</script>
 </body>
 
 </html>
-
